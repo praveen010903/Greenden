@@ -14,33 +14,47 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     <nav class="p-3 bg-green-400 flex  items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:hidden" viewBox="0 0 20 20" fill="currentColor">
+        <svg id="menuicon"  xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:hidden" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                 clip-rule="evenodd" />
         </svg>
 
 
-        <ul class="flex gap-5 text-gray-600  md:flex .hidden {
-            display: none;
-        }" >
+        <ul class="flex gap-5 text-gray-600 hidden md:flex" >
             <li>
                 <a class="hover:underline hover:text-black" href="./index.html">Home</a>
             </li>
             <li>
-                <a class="hover:underline hover:text-black" href="C:\Users\Praveen\Desktop\Tailwind CSS\images\product.html">Product</a>
+                <a class="hover:underline hover:text-black" href="./product.html">Product</a>
             </li>
             <li>
-                <a class="hover:underline hover:text-black" href="C:\Users\Praveen\Desktop\Tailwind CSS\images\contact.html">Contact</a>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
             </li>
         </ul>
+       
     </nav>
+    <section id="sidebar" class=" bg-green-400 z-20 fixed top-0 right-0 transition-all duration-1000" style="width: 50%;height: 100vh; right:-50%;" >
+        <div  class="text-right p-5">
+            <p class="inline cursor-pointer" id="closenav">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-600  items-center" >
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./product.html">Product</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+            </li>
+    </section>
     <section class="bg-green-400 p-4 md:p-10 flex justify-center ">
         <div>
             <p>We Offer you a wide range of Artificial and natural flowers </p>
             <h2 class="font-bold mt-3 md:font-extrabold text-5xl">Plants For Your Interior</h2>
             <div class="p-4  mb-5" >
-                <button class="bg-black text-white p-2 rounded mt-3">Shop Now</button>
+            <button class="bg-black text-white p-2 rounded mt-3">Shop Now</button>
                 <button class="bg-white p-2 rounded-xl">Watch Videos</button>
                 <p class="mt-5">160+ Plant Species| 100+ Clients</p>
             </div>
@@ -141,6 +155,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <p class="mt-4">The standard chunk of lore ipsum used since 2004is responded below those interest  </p>
         <p class="mt-4">@ 2021 Greenden.com</p>
        </section>
+       <script src="index.js"></script>
 </body>
 
 </html>
